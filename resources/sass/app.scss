@@ -1,0 +1,62 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '../../bootstrap/scss/bootstrap';
+
+
+.main-sidebar.sidebar-red {
+    background-color: $lunelli-red;
+    .has-treeview.menu-open > a{
+        background-color: $lunelli-red-open;
+    }
+    *{
+        color:$lunelli-light-grey;
+    }
+    .brand-link {
+        background-color: $lunelli-red-darker;
+        .brand-text {
+            color:$lunelli-white!important;
+        }
+    }
+    a.nav-link.active{
+        background-color: $lunelli-red-open;
+    }
+    a.nav-link:hover {
+        background-color: $lunelli-red-hover;
+        p{
+            color:$lunelli-white;
+        }
+    }
+}
+
+.sidebar-mini,
+.sidebar-mini.sidebar-collapse{
+    .navbar-darkblue{
+        background-color:$lunelli-blue!important;
+        .nav-item,
+        .nav-item.show {
+            .nav-link{
+                color: $lunelli-light-grey;
+            }
+            .nav-link:hover,
+            .nav-link:active,
+            .nav-link:active *,
+            .nav-link:hover *{
+                color: $lunelli-white;
+            }        
+        }
+        .nav-item:active,
+        .nav-item.show:active,
+        .nav-item.show:hover,
+        .nav-item:hover {
+            .nav-link,
+            .nav-link *{
+                color: $lunelli-white;
+            }
+        }    
+    }
+}
