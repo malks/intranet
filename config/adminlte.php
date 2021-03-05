@@ -236,8 +236,8 @@ return [
         ],
         ['header' => ''],
         [
-            'text' => 'Home',
-            'url'  => 'home',
+            'text' => 'Linha do Tempo',
+            'url'  => 'timeline',
             'icon' => 'fas fa-fw fa-home',
         ],
         [

@@ -23,6 +23,7 @@ class UpdateUsersTable extends Migration
                 $table->string('address_district')->nullable();
                 $table->string('address_city',150)->nullable();
                 $table->string('address_state',100)->nullable();
+                $table->integer('id_timeline')->nullable();
             });            
         }
     }

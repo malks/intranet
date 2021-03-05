@@ -19,6 +19,8 @@ class CreateGroupsTable extends Migration
             $table->string('name');
             $table->string('description')->nullable();
             $table->tinyInteger('fixed')->default(0);
+            $table->tinyInteger('new_users_can_invite')->default(0);
+            $table->tinyInteger('is_user_timeline')->default(0);
         });
     }
 

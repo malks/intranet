@@ -21,7 +21,6 @@ class CreateUsersGroupsTable extends Migration
             $table->tinyInteger('feed_write')->default(0);
             $table->tinyInteger('doc_write')->default(0);
             $table->tinyInteger('link_write')->default(0);
-            $table->tinyInteger('follows')->default(0);
         });
     }
 
