@@ -13,12 +13,10 @@ class CreateFeedTable extends Migration
      */
     public function up()
     {
-        Schema::create('feed', function (Blueprint $table) {
+        Schema::create('feeds', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
             $table->integer('id_user');
-            $table->integer('id_group');
-            $table->string('link');
             $table->text('content');
             $table->tinyInteger('in_landing')->default(0);
             $table->string('cover')->nullable();

@@ -123,5 +123,4 @@ class User extends Authenticatable
     {
         return $this->belongsToMany('App\Feed','feed_shared_user','id_user_shared','id_feed');
     }
-
 }
