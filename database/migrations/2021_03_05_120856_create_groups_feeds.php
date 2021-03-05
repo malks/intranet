@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateFolderTags extends Migration
+class CreateGroupsFeeds extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreateFolderTags extends Migration
      */
     public function up()
     {
-        Schema::create('folder_tags', function (Blueprint $table) {
+        Schema::create('groups_feeds', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->integer('id_folder');
-            $table->integer('id_tag');
+            $table->integer('id_group');
+            $table->integer('id_feed');
         });
     }
 
@@ -28,6 +28,6 @@ class CreateFolderTags extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('folder_tags');
+        Schema::dropIfExists('groups_feeds');
     }
 }

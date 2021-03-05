@@ -29,6 +29,6 @@ class CreateFeedCommentTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('feed_comment');
+        Schema::dropIfExists('comments');
     }
 }

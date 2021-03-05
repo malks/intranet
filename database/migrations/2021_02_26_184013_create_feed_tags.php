@@ -17,7 +17,7 @@ class CreateFeedTags extends Migration
             $table->id();
             $table->timestamps();
             $table->integer('id_feed');
-            $table->string('tag',100);
+            $table->integer('id_tag');
         });
     }
 
